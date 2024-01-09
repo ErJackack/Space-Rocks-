@@ -1,0 +1,5 @@
+/// @collision
+
+instance_destroy();
+
+
