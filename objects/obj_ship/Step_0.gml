@@ -11,9 +11,6 @@ if(keyboard_check(vk_right)){
 }
 
 if(keyboard_check(vk_up)){
-	if(speed<0 && image_angle + 90 > 0){
-		motion_add(image_angle, 5*speed_inc);
-	}
 	motion_add(image_angle, speed_inc);
 }
 
