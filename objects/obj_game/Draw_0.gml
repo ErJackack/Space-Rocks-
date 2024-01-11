@@ -14,9 +14,9 @@ switch(room){
 		draw_text(
 			room_width/2, 200, 
 			@"Score 1000 points to win
-UP/DOWN: Move
-RIGHT/LEFT: Change direction
-SPACE: Shoot
+W/D: Move
+A/D: Change direction
+ENTER: Shoot
 
 >> PRESS ENTER TO START <<"
 		);
