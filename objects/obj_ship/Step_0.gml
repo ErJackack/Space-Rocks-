@@ -25,8 +25,17 @@ if(keyboard_check(vk_enter)){
 		bullet_cycle = bullet_cycle_end;
 	}
 	bullet_cycle-=1
+	
 }
 else{
 	bullet_cycle = 0;
 }
 move_wrap(true, true, sprite_width/2);
+
+/*
+if(keyboard_check_pressed(vk_enter)){
+	if(start_again == 1){
+		instance_create_layer(room_width/2, room_height/2, "Instances", obj_ship);
+	}
+}
+*/

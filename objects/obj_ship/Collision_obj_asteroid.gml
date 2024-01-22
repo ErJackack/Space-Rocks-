@@ -7,3 +7,8 @@ repeat(10){
 	instance_create_layer(x,y, "Instances", obj_debris);
 }
 //room_goto(rm_game);
+
+
+
+score = 0
+//start_again = 1
