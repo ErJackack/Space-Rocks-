@@ -2,23 +2,23 @@
 
 
 
-if(keyboard_check(ord("A"))){
+if(keyboard_check(ord("A")) || keyboard_check(vk_left)){
 	image_angle += rotation_speed;	
 }
 
-if(keyboard_check(ord("D"))){
+if(keyboard_check(ord("D")) || keyboard_check(vk_right)){
 	image_angle -= rotation_speed;	
 }
 
-if(keyboard_check(ord("W"))){
+if(keyboard_check(ord("W")) || keyboard_check(vk_up)){
 	motion_add(image_angle, speed_inc);
 }
 
-if(keyboard_check(ord("S"))){
+if(keyboard_check(ord("S")) || keyboard_check(vk_down)){
 	motion_add(image_angle, -speed_inc);
 }
 
-if(keyboard_check(vk_enter)){
+if(keyboard_check(vk_enter) || keyboard_check(vk_space)){
 	if(bullet_cycle == 0){
 		var inst = instance_create_layer(x,y, "Instances", obj_bullet);
 		inst.direction = image_angle;

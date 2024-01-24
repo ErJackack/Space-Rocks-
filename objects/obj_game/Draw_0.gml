@@ -1,4 +1,7 @@
 /// @desc 
+
+var start_text = "\n\nW/D: Move \n A/D: Change direction \n ENTER: Shoot \n\n >> PRESS ENTER TO START <<";
+
 switch(room){
 	case rm_game:
 		draw_text(20,20, "SCORE: " + string(score));
@@ -13,13 +16,7 @@ switch(room){
 			);
 		draw_text(
 			room_width/2, 200, 
-			@"Score 650 points to win
-W/D: Move
-A/D: Change direction
-ENTER: Shoot
-
->> PRESS ENTER TO START <<"
-		);
+			@"Try to beat your record of " + string(score_record) + start_text);
 		draw_set_halign(fa_left);
 		break;
 		
@@ -51,8 +48,14 @@ ENTER: Shoot
 			room_width/2, 250, 
 			"FINAL SCORE: "+string(score)
 		);
+		if (score > score_record){
+			draw_text(
+				room_width/2, 300, 
+				"NEW RECORD!"
+			);
+		}
 		draw_text(
-			room_width/2, 300, 
+			room_width/2, 350, 
 			"PRESS ENTER TO RESTART"
 		);
 		draw_set_halign(fa_left);
