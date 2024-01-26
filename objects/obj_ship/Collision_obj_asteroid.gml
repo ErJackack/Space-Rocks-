@@ -16,7 +16,7 @@ repeat(10){
 //alarm_set(1, room_speed * 1)
 instance_destroy(obj_asteroid);
 
-repeat(40){
+repeat(30){
 		var xx = choose(
 			irandom_range(0, room_width*0.3),
 			irandom_range(room_width*0.7, room_width)

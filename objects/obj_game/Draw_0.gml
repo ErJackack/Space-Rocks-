@@ -1,6 +1,6 @@
 /// @desc 
 
-var start_text = "\n\nW/D: Move \n A/D: Change direction \n ENTER: Shoot \n\n >> PRESS ENTER TO START <<";
+var start_text = "\n\nUP/DOWN: Move \n RIGHT/LEFT: Change direction \n ENTER/SPACE: Shoot \n\n >> PRESS ENTER TO START <<";
 
 switch(room){
 	case rm_game:

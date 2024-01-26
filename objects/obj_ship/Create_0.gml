@@ -7,5 +7,4 @@ rotation_speed=5;
 
 bullet_cycle = 0;
 bullet_cycle_end = 15;
-//start_again = 0;
 
