@@ -6,7 +6,8 @@ var sound = choose(
 );
 
 if (room == rm_game){
-	audio_play_sound(sound, 1, true);
+	audio_pause_all();
+	audio_play_sound(sound, 5, true);
 	repeat(asteroid_number){
 		var xx = choose(
 			irandom_range(0, room_width*0.3),
@@ -22,4 +23,13 @@ if (room == rm_game){
 	alarm[0] = 60;
 }
 
+if (room == rm_gameover){
+	audio_pause_all();
+	audio_play_sound(snd_die, 1, true);
+	audio_play_sound(snd_gameover, 2, true);
+}
 
+if (room == rm_start){
+	audio_pause_all();
+	audio_play_sound(snd_wait, 1, true);
+}

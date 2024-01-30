@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_die",
+  "name": "snd_wait",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -14,8 +14,8 @@
   "bitRate": 128,
   "volume": 1.0,
   "preload": false,
-  "soundFile": "snd_die.mp3",
-  "duration": 1.6457,
+  "soundFile": "snd_wait.mp3",
+  "duration": 108.12081,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

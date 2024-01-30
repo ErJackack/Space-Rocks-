@@ -12,7 +12,7 @@
   "sampleRate": 44100,
   "bitDepth": 1,
   "bitRate": 128,
-  "volume": 0.08,
+  "volume": 0.37,
   "preload": false,
   "soundFile": "snd_shoot.wav",
   "duration": 0.301202,
