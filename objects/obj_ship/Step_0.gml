@@ -1,7 +1,5 @@
 /// @movement of the ship
 
-
-
 if(keyboard_check(ord("A")) || keyboard_check(vk_left)){
 	image_angle += rotation_speed;	
 }

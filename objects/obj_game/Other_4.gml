@@ -8,6 +8,12 @@ var sound = choose(
 if (room == rm_game){
 	audio_pause_all();
 	audio_play_sound(sound, 5, true);
+	if (!global.sound_on){
+		audio_pause_all();
+	}
+	
+	instance_create_layer(room_width/2, room_height/2, "Instances",obj_ship);
+	
 	repeat(asteroid_number){
 		var xx = choose(
 			irandom_range(0, room_width*0.3),
@@ -25,11 +31,17 @@ if (room == rm_game){
 
 if (room == rm_gameover){
 	audio_pause_all();
-	audio_play_sound(snd_die, 1, true);
+	audio_play_sound(snd_die, 1, false);
 	audio_play_sound(snd_gameover, 2, true);
+	if (!global.sound_on){
+		audio_pause_all();
+	}
 }
 
 if (room == rm_start){
 	audio_pause_all();
 	audio_play_sound(snd_wait, 1, true);
+	if (!global.sound_on){
+		audio_pause_all();
+	}
 }

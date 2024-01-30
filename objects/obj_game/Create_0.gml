@@ -8,3 +8,5 @@ draw_set_font(fnt_text);
 score_record = 4000;
 
 randomize();
+
+global.sound_on = true;

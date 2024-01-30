@@ -3,8 +3,11 @@ lives-= 1;
 
 
 audio_play_sound(snd_die, 1, false);
-
-instance_destroy();
+if (!global.sound_on){
+	audio_pause_all();
+}
+	
+instance_destroy(obj_ship);
 
 repeat(10){
 	instance_create_layer(x,y, "Instances", obj_debris);
@@ -31,9 +34,11 @@ repeat(30){
 		instance_create_layer(xx,yy, "Instances",obj_asteroid);
 	}
 
-time_source = time_source_create(time_source_game, 2, time_source_units_seconds, function()
-{
-	instance_create_layer(room_width/2, room_height/2, "Instances", obj_ship);
-}, []);
+if (lives != 0){
+	time_source = time_source_create(time_source_game, 2, time_source_units_seconds, function()
+	{
+		instance_create_layer(room_width/2, room_height/2, "Instances", obj_ship);
+	}, []);
 
-time_source_start(time_source);
+	time_source_start(time_source);
+}
