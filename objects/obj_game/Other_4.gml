@@ -1,5 +1,12 @@
 /// @desc 
+var sound = choose(
+	snd_game1, snd_game2, snd_game3, 
+	snd_game4, snd_game5, snd_game6, 
+	snd_game7, snd_game8, snd_game9
+);
+
 if (room == rm_game){
+	audio_play_sound(sound, 1, true);
 	repeat(asteroid_number){
 		var xx = choose(
 			irandom_range(0, room_width*0.3),
