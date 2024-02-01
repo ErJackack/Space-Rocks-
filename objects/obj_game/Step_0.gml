@@ -13,16 +13,7 @@ if(keyboard_check_pressed(vk_enter)){
 		
 }
 
-if(keyboard_check_pressed(vk_delete)){
-	global.sound_on = !global.sound_on;
-}
-
 if (room == rm_game){
-	/*
-	if(score >= max_score){
-		room_goto(rm_win);
-	}
-	*/
 	if(lives <= 0){
 		room_goto(rm_gameover);
 	}
