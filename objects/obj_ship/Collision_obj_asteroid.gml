@@ -12,14 +12,7 @@ instance_destroy(obj_ship);
 repeat(10){
 	instance_create_layer(x,y, "Instances", obj_debris);
 }
-//room_goto(rm_game);
 
-
-
-//score = 0
-//start_again = 1
-
-//alarm_set(1, room_speed * 1)
 instance_destroy(obj_asteroid);
 
 repeat(30){
